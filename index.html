@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/src/assets/logo.png" type="image/svg+xml">
+  <title>Privacy Search Companion</title>
+  <meta name="description" content="Privacy Search Companion WebSite">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript>
+    <p>EN: Please enable JavaScript to use this application.</p>
+    <p>EN: If it's already enabled, try upgrading your browser.</p>
+    <hr>
+    <p>RU: Пожалуйста, включите JavaScript чтобы использовать это приложение.</p>
+    <p>RU: Если он уже включен, попробуйте обновить браузер.</p>
+  </noscript>
+  <script>
+    (function () {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
