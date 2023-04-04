@@ -1,6 +1,7 @@
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
+import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
   base: './',
@@ -11,5 +12,6 @@ export default defineConfig({
   },
   plugins: [
     Vue(),
+    Icons({ compiler: 'vue3' }),
   ],
 })

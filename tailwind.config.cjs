@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-const { addDynamicIconSelectors } = require('@iconify/tailwind')
 
 module.exports = {
-  dark: 'class',
+  darkMode: 'class',
   content: [
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
@@ -14,5 +13,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), addDynamicIconSelectors()],
+  plugins: [require('@tailwindcss/forms')],
 }
