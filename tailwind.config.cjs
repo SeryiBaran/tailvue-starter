@@ -14,5 +14,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('tailwindcss-animated'), addDynamicIconSelectors()],
+  plugins: [require('@tailwindcss/forms'), addDynamicIconSelectors()],
 }
