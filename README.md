@@ -4,13 +4,14 @@
 
 Основано на [Vitesse-lite](https://github.com/antfu/vitesse-lite).
 
-## Технологии:
+## Технологии
 
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vue.js](https://vuejs.org/)
 - [Vue-I18n](https://vue-i18n.intlify.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Vite.js](https://vutejs.dev/)
+- [Vitest](https://vutest.dev/)
 - [TailwindCSS Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [VueUse](https://vueuse.org/)
 - [Eslint](https://eslint.org/)

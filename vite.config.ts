@@ -1,5 +1,5 @@
 import path from 'node:path'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import Vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
 
@@ -14,4 +14,7 @@ export default defineConfig({
     Vue(),
     Icons({ compiler: 'vue3' }),
   ],
+  test: {
+    environment: 'jsdom',
+  },
 })

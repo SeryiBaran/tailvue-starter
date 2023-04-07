@@ -6,3 +6,10 @@ export const messages = {
     about: 'Vue project template with a lot of useful things. For details - view GitHub!',
   },
 }
+
+export const config = {
+  legacy: false,
+  locale: 'ru',
+  fallbackLocale: 'en',
+  messages,
+}

@@ -34,7 +34,7 @@ function toggleLocale() {
     </header>
     <main class="flex flex-col items-center gap-4">
       <section>
-        <p>
+        <p id="about">
           {{ $t("about") }}
         </p>
       </section>
@@ -48,7 +48,7 @@ function toggleLocale() {
           <IconMdiThemeLightDark class="icon" />
         </button>
 
-        <button class="btn icon-button" @click="toggleLocale()">
+        <button id="localeToggleButton" class="btn icon-button" @click="toggleLocale()">
           <IconMdiTranslate class="icon" />
         </button>
       </div>
