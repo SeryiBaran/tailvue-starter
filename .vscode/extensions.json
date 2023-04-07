@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "ZixuanChen.vitest-explorer",
     "bradlc.vscode-tailwindcss",
     "vue.volar",
     "dbaeumer.vscode-eslint",
