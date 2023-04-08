@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "lokalise.i18n-ally",
     "ZixuanChen.vitest-explorer",
     "bradlc.vscode-tailwindcss",
     "vue.volar",
