@@ -15,6 +15,9 @@ export default defineConfig({
     Icons({ compiler: 'vue3' }),
   ],
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
+    coverage: {
+      provider: 'istanbul',
+    },
   },
 })

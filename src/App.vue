@@ -14,14 +14,11 @@ function toggleLocale() {
   const availableLocales = i18n.availableLocales
   const indexOfCurrentLocale = availableLocales.indexOf(localeStore.value)
 
-  if (!(indexOfCurrentLocale >= 0))
-    return
-  if (!(indexOfCurrentLocale < availableLocales.length - 1)) {
+  if (!(indexOfCurrentLocale < availableLocales.length - 1))
     localeStore.value = availableLocales[0]
-    return
-  }
 
-  localeStore.value = availableLocales[indexOfCurrentLocale + 1]
+  else
+    localeStore.value = availableLocales[indexOfCurrentLocale + 1]
 }
 </script>
 
@@ -34,7 +31,7 @@ function toggleLocale() {
     </header>
     <main class="flex flex-col items-center gap-4">
       <section>
-        <p id="about">
+        <p data-testId="aboutParagraph">
           {{ $t("about") }}
         </p>
       </section>
@@ -44,11 +41,11 @@ function toggleLocale() {
           <IconMdiGithub class="icon" />
         </a>
 
-        <button class="btn icon-button" @click="toggleDark()">
+        <button class="btn icon-button" data-testId="toggleDarkBtn" @click="toggleDark()">
           <IconMdiThemeLightDark class="icon" />
         </button>
 
-        <button id="localeToggleButton" class="btn icon-button" @click="toggleLocale()">
+        <button data-testId="toggleLocaleBtn" class="btn icon-button" @click="toggleLocale()">
           <IconMdiTranslate class="icon" />
         </button>
       </div>

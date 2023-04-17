@@ -20,9 +20,9 @@ describe('I18n', async () => {
 
     for (let index = 0; index < locales.length + 1; index++) {
       if (index !== 0)
-        await wrapper.find('button#localeToggleButton').trigger('click')
+        await wrapper.find('button[data-testId="toggleLocaleBtn"]').trigger('click')
 
-      expect(wrapper.find('main p#about').text()).toBe(config.messages[index > locales.length - 1 ? locales[0] : locales[index]].about)
+      expect(wrapper.find('p[data-testId="aboutParagraph"]').text()).toBe(config.messages[index > locales.length - 1 ? locales[0] : locales[index]].about)
     }
   })
 })
