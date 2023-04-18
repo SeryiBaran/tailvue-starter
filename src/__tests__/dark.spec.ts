@@ -25,7 +25,5 @@ describe('Dark theme', async () => {
 
     await wrapper.find('button[data-testId="toggleDarkBtn"]').trigger('click')
     expect(isDark.value).toBeTruthy()
-
-    // TODO: expect(5). // нет подсказок .to*
   })
 })
