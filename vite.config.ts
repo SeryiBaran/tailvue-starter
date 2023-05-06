@@ -10,10 +10,7 @@ export default defineConfig({
       '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
-  plugins: [
-    Vue(),
-    Icons({ compiler: 'vue3' }),
-  ],
+  plugins: [Vue(), Icons({ compiler: 'vue3' })],
   test: {
     environment: 'happy-dom',
   },

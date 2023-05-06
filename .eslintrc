@@ -1,6 +1,10 @@
 {
-  "extends": ["@antfu", "plugin:tailwindcss/recommended"],
+  "extends": ["@antfu", "prettier", "plugin:tailwindcss/recommended"],
+  "plugins": ["prettier"],
   "rules": {
+    "prettier/prettier": "error",
+    "antfu/if-newline": "off",
+    "no-console": "off",
     "tailwindcss/classnames-order": "error",
     "tailwindcss/no-custom-classname": "off"
   }

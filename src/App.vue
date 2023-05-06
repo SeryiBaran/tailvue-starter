@@ -16,36 +16,46 @@ function toggleLocale() {
 
   if (!(indexOfCurrentLocale < availableLocales.length - 1))
     localeStore.value = availableLocales[0]
-
-  else
-    localeStore.value = availableLocales[indexOfCurrentLocale + 1]
+  else localeStore.value = availableLocales[indexOfCurrentLocale + 1]
 }
 </script>
 
 <template>
-  <div class="m-auto flex min-h-[100vh] max-w-2xl flex-col items-center justify-center p-4 text-center font-sans">
+  <div
+    class="m-auto flex min-h-[100vh] max-w-2xl flex-col items-center justify-center p-4 text-center font-sans"
+  >
     <header class="flex flex-wrap items-center justify-center gap-4">
-      <h1>
-        Tailvue
-      </h1>
+      <h1>Tailvue</h1>
     </header>
     <main class="flex flex-col items-center gap-4">
       <section>
         <p data-testId="aboutParagraph">
-          {{ $t("about") }}
+          {{ $t('about') }}
         </p>
       </section>
 
       <div class="flex gap-4">
-        <a href="https://github.com/SeryiBaran/tailvue-starter" target="_blank" class="btn icon-button">
+        <a
+          href="https://github.com/SeryiBaran/tailvue-starter"
+          target="_blank"
+          class="btn icon-button"
+        >
           <IconMdiGithub class="icon" />
         </a>
 
-        <button class="btn icon-button" data-testId="toggleDarkBtn" @click="toggleDark()">
+        <button
+          class="btn icon-button"
+          data-testId="toggleDarkBtn"
+          @click="toggleDark()"
+        >
           <IconMdiThemeLightDark class="icon" />
         </button>
 
-        <button data-testId="toggleLocaleBtn" class="btn icon-button" @click="toggleLocale()">
+        <button
+          data-testId="toggleLocaleBtn"
+          class="btn icon-button"
+          @click="toggleLocale()"
+        >
           <IconMdiTranslate class="icon" />
         </button>
       </div>

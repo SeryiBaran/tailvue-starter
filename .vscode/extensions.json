@@ -4,7 +4,10 @@
     "ZixuanChen.vitest-explorer",
     "bradlc.vscode-tailwindcss",
     "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree"
   ]
 }
