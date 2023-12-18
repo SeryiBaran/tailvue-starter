@@ -1,5 +1,7 @@
 # tailvue-starter
 
+## Больше не поддерживается! Лучше используйте Vitesse/Vitesse-lite
+
 Стартовый шаблон Vue.
 
 Основано на [Vitesse-lite](https://github.com/antfu/vitesse-lite).
